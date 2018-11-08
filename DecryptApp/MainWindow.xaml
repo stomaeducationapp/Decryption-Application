@@ -1,12 +1,17 @@
-﻿<Window x:Class="DecryptApp.MainWindow"
+﻿<Window x:Class="Enc_Dec.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DecryptApp"
+        xmlns:local="clr-namespace:Enc_Dec"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF979797">
+        <Label x:Name="title" Content="Decryption Application" HorizontalAlignment="Left" Margin="222,25,0,0" VerticalAlignment="Top" Height="52" Width="341" FontSize="32"/>
+        <Button x:Name="selectFileToDec" Content="Choose File" HorizontalAlignment="Left" Margin="324,141,0,0" VerticalAlignment="Top" Width="128" Height="53" Click="selectFileToDec_Click"/>
+        <Button x:Name="decFile" Content="Decrypt" HorizontalAlignment="Left" Margin="324,289,0,0" VerticalAlignment="Top" Width="128" Height="53" Click="decFile_Click"/>
+        <Button x:Name="encryptBtn" Content="Encrypt" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="94" Height="29" Click="encrypt_Click"/>
+        <Label x:Name="filePath" Content="" HorizontalAlignment="Left" Margin="287,221,0,0" VerticalAlignment="Top" Height="40" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" MinWidth="200"/>
+        <Button x:Name="verifyBtn" Content="Verify" HorizontalAlignment="Left" Margin="690,58,0,0" VerticalAlignment="Top" Width="94" Height="30" Click="verifyBtn_Click"/>
     </Grid>
 </Window>
